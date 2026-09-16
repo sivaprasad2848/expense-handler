@@ -1,7 +1,6 @@
 #expence manager
 from helper import *
 y=0
-
 while(y==0):
     opt=menu()
     if opt==1:
