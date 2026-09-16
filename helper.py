@@ -6,7 +6,9 @@ def insert_contact():
     expences.append((title,amount,dt))
 def display_contact():
     #print(title+" "+amount+" "+dt)
-    print(expences)
+    #print(expences)
+    for item in expences:
+        print(item)
 def delete_contact():
     i=int(input("Enter the index you want to delete"))
     del expences[i]
@@ -23,3 +25,8 @@ def menu():
     print("4->For Update")
     op=int(input("Enter the option"))
     return op
+def get_expences():
+    return expences
+def set_expences(t):
+    global expences
+    expences=t
